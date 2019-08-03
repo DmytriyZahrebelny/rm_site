@@ -1,0 +1,33 @@
+{
+  "name": "rm",
+  "version": "1.0.0",
+  "description": "cakes",
+  "main": "index.js",
+  "scripts": {
+    "test": "editorconfig-cli",
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "devDependencies": {
+    "autoprefixer": "9.6.1",
+    "browser-sync": "^2.26.7",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-better-rollup": "^4.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-normalize-scss": "^8.0.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ]
+}

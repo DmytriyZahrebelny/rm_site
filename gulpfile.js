@@ -14,7 +14,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const pug = require("gulp-pug");
 
 gulp.task('styles', function() {
-	return gulp.src('./src/scss/**/*.scss')
+	return gulp.src('./src/sass/**/*.sass')
 		.pipe(plumber())
 		.pipe(sass())
 		.pipe(sass({ includePaths: require('node-normalize-scss').includePaths }))
@@ -79,7 +79,7 @@ gulp.task("server", function () {
 		server: "build/",
 	});
 
-	gulp.watch("./src/scss/**/*.scss", gulp.series("styles"));
+	gulp.watch("./src/sass/**/*.sass", gulp.series("styles"));
 	gulp.watch("./src/pug/pages/*.pug", gulp.series("pug", "refresh"));
 	gulp.watch('./src/js/**/*.js', gulp.series("scripts", "refresh"));
 });

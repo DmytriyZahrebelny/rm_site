@@ -80,7 +80,7 @@ gulp.task("server", function () {
 	});
 
 	gulp.watch("./src/sass/**/*.sass", gulp.series("styles"));
-	gulp.watch("./src/pug/pages/*.pug", gulp.series("pug", "refresh"));
+	gulp.watch("./src/pug/**/*.pug", gulp.series("pug", "refresh"));
 	gulp.watch('./src/js/**/*.js', gulp.series("scripts", "refresh"));
 });
 
